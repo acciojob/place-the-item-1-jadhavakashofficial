@@ -1,2 +1,53 @@
+/* Container that holds the items */
+.holder {
+  /* Enable Flexbox */
+  display: flex;
+  
+  /* Distribute space between items 
+     so first item is at the extreme left,
+     last item at the extreme right */
+  justify-content: space-between;
+  
+  /* Allow items to wrap onto a new line if needed */
+  flex-wrap: wrap;
+  
+  /* Optional: to give some vertical spacing between lines when wrapping */
+  row-gap: 20px;
+  
+  /* Optional: set a max width or padding to control layout in a bigger container */
+  /* max-width: 800px;
+  margin: 0 auto; */
+}
 
-/* Your CSS Code here. */
+/* Common styles for each box */
+.item {
+  /* Fix the size of each box (example) */
+  width: 100px;
+  height: 100px;
+  
+  /* Center text horizontally and vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Make text bold and bigger, optional */
+  font-weight: bold;
+  font-size: 24px;
+  
+  /* Optional margin if you want space around each item,
+     but be aware it affects how space-between behaves */
+  /* margin: 10px; */
+}
+
+/* Different background colors for demonstration */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
